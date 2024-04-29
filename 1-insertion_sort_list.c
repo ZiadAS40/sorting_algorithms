@@ -14,10 +14,8 @@ void insertion_sort_list(listint_t **list)
 	if ((*list) == NULL)
 		return;
 	if ((*list)->next == NULL)
-	{
-		print_list(*list);
 		return;
-	}
+
 	(*list) = (*list)->next;
 	while (temp2 != NULL)
 	{
