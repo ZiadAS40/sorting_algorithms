@@ -27,12 +27,10 @@ void insertion_sort_list(listint_t **list)
 			if ((*list)->prev != NULL)
 				temp = (*list)->prev;
 			if ((*list)->n > temp->n || (*list)->prev == NULL)
-			{
 				break;
-			}
+
 			else
 			{
-
 				temp->next = (*list)->next;
 				if (temp->prev != NULL)
 					temp->prev->next = (*list);
@@ -49,4 +47,6 @@ void insertion_sort_list(listint_t **list)
 		if (temp2 != NULL)
 			(*list) = temp2;
 	}
+		while ((*list)->prev != NULL)
+			(*list) = (*list)->prev;
 }
