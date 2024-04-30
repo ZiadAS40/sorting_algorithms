@@ -19,6 +19,7 @@ void quick_sort(int *array, size_t size)
  * @right: The rightmost index of the sub-array to sort.
  * @size: The total size of the array (used for printing).
  */
+
 void recursive_sort(int *arr, int left, int right, size_t size)
 {
 	int pivot_index;
